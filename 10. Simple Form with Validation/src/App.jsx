@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import ExpensiveCalculation from "./components/ExpensiveCalculation";
 
 const App = () => {
   const [form, setForm] = useState({ name: "", email: "" });
@@ -32,6 +33,8 @@ const App = () => {
 
         {error && <p style={{ color: "red" }}>{error}</p>}
       </form>
+
+      <ExpensiveCalculation />
     </div>
   );
 };
